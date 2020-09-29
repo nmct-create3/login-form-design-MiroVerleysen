@@ -480,6 +480,57 @@ label {
     Card with box shadow
 */
 
+.c-card {
+    background-color: white;
+    border-radius: 3px;
+}
+
+.c-card__body {
+
+    padding: 12px 48px;
+
+}
+
+.c-card__title {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 500;
+    padding-top: 48px;
+    margin-top: 56px;
+
+}
+
+.c-card__footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    border-top: 1px solid lightgrey;
+}
+
+.c-card__footer p {
+    margin: 24px 12px;
+}
+
+@media(max-width:530px) {
+
+    .c-card__body {
+        padding: 6px 24px;
+        font-size: 14px;
+
+    }
+
+    .c-card__title {
+        font-size: 16px;
+    }
+
+
+
+}
+
 /*
     Component: Forms
     ---
@@ -498,7 +549,7 @@ label {
     appearance: none;
     width: 100%;
     outline: none;
-    border: 0px;
+    border: 1px solid #E2E3E7;
     border-color: #E2E3E7;
     border-radius: 3px;
     font-family: "inter";
@@ -519,7 +570,17 @@ label {
     Class to put on all form labels
 */
 
-.c-label {}
+.c-label {
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 8px;
+    color: #606274;
+}
+
+.c-label--option{
+    margin-left: 8px;
+    margin-bottom: 0px;
+}
 
 .c-form-field {}
 
@@ -541,19 +602,29 @@ label {
 .c-button {
     font-size: 16px;
     font-weight: bolder;
-    border: 1px solid;
-    border-radius: 1px;
+    border: 1px solid #2E77E6;
+    border-radius: 3px;
     color: #FFFFFF;
-    background-color: #2E77E6;
+    background-color: #3385FF;
     width: 100%;
+    height: 48px;
+}
+
+.c-button:hover {
+    background-color: #4F95FF;
+    border: 1px solid #2E77E6;
+}
+
+.c-button:focus {
+    background-color: #3385FF;
+    border: 3px solid #3385FF;
     outline: none;
 }
 
-.c-button:hover {}
-
-.c-button:focus {}
-
-.c-button:active {}
+.c-button:active {
+    background-color: #2E77E6;
+    border: none;
+}
 
 .c-button--block {}
 
@@ -568,7 +639,7 @@ label {
 */
 
 .u-color-neutral-base {
-    color: Silver;
+    color:#757787;
 }
 
 .u-color-neutral-dark {
